@@ -1,0 +1,13 @@
+[package]
+name = "rust-parse-tx"
+version = "0.1.0"
+edition = "2018"
+
+
+[dependencies]
+anyhow = "1"
+dotenv= {git="https://github.com/dotenv-rs/dotenv"}
+log = { version = "0.4", features = ["std", "serde"] }
+futures = { version = "0.3.*" }
+ethers = { git = "https://github.com/gakonst/ethers-rs" }
+tokio = {version = "1", features = ["full"] }
